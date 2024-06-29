@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #0144E4; 
+    --background-color: #ffff;
+    --font-color: #14192B;
+    --light-font-color: #888B94;
+    --font-size: 16px; /* Base font size */
+  }
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -11,3 +19,44 @@ body {
 body a {
     text-decoration: none;
 }
+
+/*navigation design*/
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 12rem 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.navigation__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.navigation .logo img {
+    width: 110px;
+    max-width: 100%;
+}
+
+.navigation__list li a {
+    display: block;
+    color: #1B192B;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: var(--font-size);
+}
+
+.navigation__button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 16px 32px;
+    font-size: var(--font-size);
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+/*hero section design*/
+
