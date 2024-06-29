@@ -60,3 +60,39 @@ body a {
 
 /*hero section design*/
 
+section {
+    padding: 8rem 12rem 3rem ;
+}
+
+.hero__headline{
+    font-size: 4.3rem;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.hero__text {
+    font-size: 1.4rem;
+    color: var(--light-font-color);
+    padding: 1.3rem 0;
+}
+
+.hero__buttons {
+    margin-top: 3rem;
+}
+
+.hero__buttons a {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 16px 32px;
+    font-size: var(--font-size);
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.hero__buttons a:last-child {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #1B192B;
+    margin-left: 1.2rem;
+}
+
