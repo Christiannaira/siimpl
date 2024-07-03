@@ -61,6 +61,56 @@
 
         <section>
 
+            <!-- <h2>Trusted By</h2>
+
+            <div class="social-proof-logos">
+
+            </div> -->
+
+            <div class="scroller">
+
+              <ul class="tag-list scroller__inner">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>SSG</li>
+                <li>webdev</li>
+                <li>animation</li>
+                <li>UI/UX</li>
+              </ul>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>We help companies scale their development with additional engineers</h2>
+            <p>Transforming ideas into innovative software solutions for businesses worldwide.</p>
+
+            <div>
+
+              <div>
+
+                <img src="" alt="">
+
+              </div>
+
+              <div>
+
+                <h3>Build Your Team With High-Aptitude Full Stack Generalists</h3>
+                <p>A team of senior developers based in the US and Latin America—here to help you scale your development output.</p>
+
+                <ul>
+                  <li>Vetted Senior Developers</li>
+                  <li>Based in the US and Latin America</li>
+                  <li>Team & Performance Oriented</li>
+                </ul>
+
+              </div>
+
+            </div>
+
         </section>
 
 
@@ -71,6 +121,28 @@
 
 
     </footer>
+
+    <script>
+
+
+      const scrollers = document.querySelectorAll(".scroller");
+
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        addAnimation();
+      }
+
+      function addAnimation() {
+
+        scrollers.forEach((scroller) => {
+
+          scroller.setAttribute("data-animated", true);
+          
+        })
+
+      }
+
+
+    </script>
 
   </body>
 </html>

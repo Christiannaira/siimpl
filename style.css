@@ -66,7 +66,7 @@ section {
 
 .hero__headline{
     font-size: 4.3rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.1;
 }
 
@@ -96,3 +96,17 @@ section {
     margin-left: 1.2rem;
 }
 
+/*scroller animation*/
+
+.scroller {
+    max-width: 600px;
+    outline: 3px solid lime;
+}
+
+.scroller__inner {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-block: 1rem;
+}
