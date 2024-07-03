@@ -98,6 +98,8 @@ section {
 
 /*scroller animation*/
 
+
+
 .scroller {
     max-width: 600px;
     outline: 3px solid lime;
@@ -109,4 +111,29 @@ section {
     flex-wrap: wrap;
     gap: 1rem;
     padding-block: 1rem;
+}
+
+.scroller[data-animated = "true"] {
+    overflow: hidden;
+    border: 2px solid red;
+    --webkit-mask: linear(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated = "true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+    
+    to {
+        transform: translate(calc(-50% - 0.5rem));
+    }
+
+}
+
+.test {
+    background-color: red;
 }
