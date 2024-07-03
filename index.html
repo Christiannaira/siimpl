@@ -67,7 +67,7 @@
 
             </div> -->
 
-            <div class="scroller">
+            <div class="scroller" data-direction="left" data-speed="fast">
 
               <ul class="tag-list scroller__inner">
                 <li>HTML</li>
@@ -77,7 +77,14 @@
                 <li>webdev</li>
                 <li>animation</li>
                 <li>UI/UX</li>
-                <li class="test">HTML</li>
+              </ul>
+
+            </div>
+
+            <div class="scroller" data-direction="right" data-speed="slow">
+
+              <ul class="tag-list scroller__inner">
+                <li>HTML</li>
                 <li>CSS</li>
                 <li>JS</li>
                 <li>SSG</li>
@@ -143,6 +150,19 @@
         scrollers.forEach((scroller) => {
 
           scroller.setAttribute("data-animated", true);
+
+          const scrollInner = scroller.querySelector(".scroller__inner");
+          const scrollerContent = Array.from(scrollInner.children);
+
+          scrollerContent.forEach((item) => {
+
+            const duplicatedItem = item.cloneNode(true);
+
+            duplicatedItem.setAttribute("aria-hidden", true);
+
+            scrollInner.appendChild(duplicatedItem);
+
+          })
 
         })
 
